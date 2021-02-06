@@ -1,6 +1,6 @@
 
 .side-box {
-  background-image: url(../statics/Illustration-1.png) ;
+  background-image: url(../../statics/Illustration-1.png) ;
   background-repeat: no-repeat;
   background-size:  contain;
   background-position:  right;
@@ -13,7 +13,7 @@
 .side-box-shadow-right {
   height: 100%;  
   width: 204px;
-  background-image: url(../statics/Base.png) ;
+  background-image: url(../../statics/Base.png) ;
   background-repeat: no-repeat;
   background-size:  contain;
   background-position:  right;

@@ -8,26 +8,13 @@ export default () =>   {
     <Container className="pt-5">
       <Row>
         <Col md={7} className="side-box d-flex">
-          <div className="side-box-shadow-left p-3">
-            <h1>Seguro de</h1>
-            <h1><strong>Salud</strong></h1>
-            <div className="my-4">
-              <ul>
-                <li>Cómpralo de una manera fácil y rápida</li>
-                <li>Cótiza y compra tu seguro 100% digital</li>
-                <li>Hasta S/ 12 millones de cobertura anual</li>
-                <li>Más de 300 clinicas en todo el Perú</li>
-              </ul>
-            </div>
-            <div className="my-4">
-              C 2021 y Company
-            </div>
+          <div className="side-box-shadow-left p-3">            
           </div>
           <div className="side-box-shadow-right"></div>
         </Col>
         <Col>
-          <h3>Obtén tu <span className="text-primary">seguro ahora</span> </h3>
-          <h5>Ingresa tus datos para comnezas</h5>
+          <h3>Hola, <span className="text-primary">Pepito</span> </h3>
+          <h5>Valida que los datos sean correctos</h5>
           <br/>
           <InputGroup className="mb-3">        
             <FormControl as="select">
