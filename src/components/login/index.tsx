@@ -6,8 +6,8 @@ export default ({goToNextStep}) =>   {
   return ( 
     <Container className="pt-5">
       <Row>
-        <Col md={7} className="side-box d-flex">
-          <div className="side-box-shadow-left p-3">
+        <Col md={7} className="login-side-box d-flex">
+          <div className="login-side-box-shadow-left pt-10 pl-3">
             <h1>Seguro de</h1>
             <h1><strong>Salud</strong></h1>
             <div className="my-4">
@@ -22,36 +22,38 @@ export default ({goToNextStep}) =>   {
               C 2021 y Company
             </div>
           </div>
-          <div className="side-box-shadow-right"></div>
+          <div className="login-side-box-shadow-right"></div>
         </Col>
         <Col>
-          <h3>Obtén tu <span className="text-primary">seguro ahora</span> </h3>
-          <h5>Ingresa tus datos para comnezas</h5>
-          <br/>
-          <InputGroup className="mb-3">        
-            <FormControl as="select">
-              <option>DNI</option>
-            </FormControl>        
-            <FormControl placeholder="Nro de Documento" />
-          </InputGroup>
+          <div className="pt-10">
+            <h3>Obtén tu <span className="text-primary">seguro ahora</span> </h3>
+            <h6>Ingresa tus datos para comnezas</h6>
+            <br/>
+            <InputGroup className="mb-3">        
+              <Form.Control as="select" size="lg" custom>
+                <option>DNI</option>
+              </Form.Control>        
+              <FormControl placeholder="Nro de Documento" size="lg" />
+            </InputGroup>
 
-          <FormControl type="date" placeholder="Fecha de nacimiento" />
-          
-          <br/>
+            <FormControl type="date" placeholder="Fecha de nacimiento" size="lg" />
+            
+            <br/>
 
-          <FormControl placeholder="Celular" />
+            <FormControl placeholder="Celular" size="lg" />
 
-          <br/>
+            <br/>
 
-          <Form.Group controlId="formBasicCheckbox">
-            <Form.Check type="checkbox" label="Acepto la Politica de Protección de Datos Personales y los Términos y Condiciones" />
-          </Form.Group>
+            <Form.Group controlId="formBasicCheckbox">
+              <Form.Check type="checkbox" label="Acepto la Politica de Protección de Datos Personales y los Términos y Condiciones" />
+            </Form.Group>
 
-          <Form.Group controlId="formBasicCheckbox">
-            <Form.Check type="checkbox" label="Acepto la Politica de Envio de Comunicaciones Comerciales" />
-          </Form.Group>
+            <Form.Group controlId="formBasicCheckbox">
+              <Form.Check type="checkbox" label="Acepto la Politica de Envio de Comunicaciones Comerciales" />
+            </Form.Group>
 
-          <Button onClick={goToNextStep}>Comencemos</Button>
+            <Button onClick={goToNextStep}>Comencemos</Button>
+          </div>
         </Col>
       </Row>
     </Container>

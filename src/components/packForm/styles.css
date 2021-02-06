@@ -1,29 +1,15 @@
 
-.side-box {
+.pack-side-box {
   background-image: url(../../statics/Illustration-1.png) ;
   background-repeat: no-repeat;
   background-size:  contain;
   background-position:  right;
 }
-/* 
-.side-box-shadow-right {
-  width: 80%;
-} */
 
-.side-box-shadow-right {
-  height: 80vh;  
-  min-width: 20px;
+.pack-side-box-shadow-right {
+  height: 100vh;
   background-image: url(../../statics/Base.png) ;
   background-repeat: no-repeat;
-  background-size:  cover;
-  background-position:  right;
-}
-
-.side-box-shadow-left {
-  color:white !important;
-  height: 80vh;
-  background-color: #2f80ed;
-  background-repeat: no-repeat;
   background-size:  contain;
-  background-position:  right;  
+  background-position: left;
 }

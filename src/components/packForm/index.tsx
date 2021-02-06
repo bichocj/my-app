@@ -7,10 +7,8 @@ export default ({goToNextStep}) =>   {
   return ( 
     <Container className="pt-5">
       <Row>
-        <Col md={7} className="side-box d-flex">
-          <div className="side-box-shadow-left p-3">            
-          </div>
-          <div className="side-box-shadow-right"></div>
+        <Col className="pack-side-box">
+          <div className="pack-side-box-shadow-right"></div>
         </Col>
         <Col>
           <h3>Elige, <span className="text-primary">tu protección</span> </h3>

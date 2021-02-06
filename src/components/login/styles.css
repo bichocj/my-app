@@ -1,25 +1,28 @@
-
-.side-box {
+.login-side-box {
   background-image: url(../../statics/Illustration-1.png) ;
   background-repeat: no-repeat;
   background-size:  contain;
   background-position:  right;
 }
 
-.side-box-shadow-right {
+.login-side-box-shadow-right {
   height: 80vh;  
   min-width: 120px;
   background-image: url(../../statics/Base.png) ;
   background-repeat: no-repeat;
-  background-size:  contain;
+  background-size:  cover;
   background-position:  right;
 }
 
-.side-box-shadow-left {
+.login-side-box-shadow-left {
   color:white !important;
   height: 80vh;
   background-color: #2f80ed;
   background-repeat: no-repeat;
   background-size:  contain;
   background-position:  right;  
+}
+
+.pt-10 {
+  padding-top: 15%;
 }
