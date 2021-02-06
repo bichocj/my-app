@@ -1,9 +1,12 @@
-import React from 'react';
-import BaseImage from '../statics/Base.png';
-import { Container, Row, Col, Button, InputGroup, FormControl, Form } from 'react-bootstrap';
+import React, {useState} from 'react';
+import CardBox from './components/card';
+import { Card, Container, Row, Col, Button } from 'react-bootstrap';
+import Illustration from './../../statics/Illustration.png';
 import './styles.css';
 
 export default ({goToNextStep}) =>   {
+  const [planSelected, setPlanSelected] = useState(undefined);
+  const plans = ["BÁSICO", "AVANZADO", "PREMIUM", "FULL"];
   return ( 
     <Container className="pt-5">
       <Row>
@@ -14,30 +17,41 @@ export default ({goToNextStep}) =>   {
           <h3>Elige, <span className="text-primary">tu protección</span> </h3>
           <h5>Selecciona tu plan de salud ideal</h5>
           <br/>
-          <InputGroup className="mb-3">        
-            <FormControl as="select">
-              <option>DNI</option>
-            </FormControl>        
-            <FormControl placeholder="Nro de Documento" />
-          </InputGroup>
-
-          <FormControl type="date" placeholder="Fecha de nacimiento" />
-          
+          <div className="d-flex justify-content-between">
+            {
+              plans.map((plan, index) => (
+                  <CardBox title={plan} price="160" active={planSelected===index} onClick={() => setPlanSelected(index)}/>
+                )
+              )
+            }
+            
+          </div>
           <br/>
-
-          <FormControl placeholder="Celular" />
-
+          <Card>
+            <Card.Header className="text-center">
+              Cuentas con estos beneficios:
+            </Card.Header>
+            <Card.Body>
+              <p className="p-4">
+                <div className="d-flex justify-content-between">
+                  <div>
+                    <p>Covertura máxima</p>
+                    <p>S/ 1MM</p>
+                    <span className="badge bg-success">Plan {plans[planSelected]}</span>
+                  </div>
+                  <div className="border-start">
+                    <img src={Illustration} />
+                  </div>
+                </div>
+              </p>
+            </Card.Body>
+          </Card>
           <br/>
-
-          <Form.Group controlId="formBasicCheckbox">
-            <Form.Check type="checkbox" label="Acepto la Politica de Protección de Datos Personales y los Términos y Condiciones" />
-          </Form.Group>
-
-          <Form.Group controlId="formBasicCheckbox">
-            <Form.Check type="checkbox" label="Acepto la Politica de Envio de Comunicaciones Comerciales" />
-          </Form.Group>
-
-          <Button onClick={goToNextStep}>Comencemos</Button>
+          <br/>
+          <div className="d-flex">
+            <div className="px-4">ENVIAR COTIZACIÓN POR CORREO</div>
+            <Button onClick={goToNextStep}>COMPRAR PLAN</Button>
+          </div>
         </Col>
       </Row>
     </Container>

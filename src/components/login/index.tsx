@@ -44,11 +44,11 @@ export default ({goToNextStep}) =>   {
 
             <br/>
 
-            <Form.Group controlId="formBasicCheckbox">
+            <Form.Group controlId="formBasicCheckbox1">
               <Form.Check type="checkbox" label="Acepto la Politica de Protección de Datos Personales y los Términos y Condiciones" />
             </Form.Group>
 
-            <Form.Group controlId="formBasicCheckbox">
+            <Form.Group controlId="formBasicCheckbox2">
               <Form.Check type="checkbox" label="Acepto la Politica de Envio de Comunicaciones Comerciales" />
             </Form.Group>
 
