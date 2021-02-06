@@ -36,3 +36,12 @@
     transform: rotate(360deg);
   }
 }
+
+
+h1, h2, h3 {
+  font-weight: 100 !important;
+}
+
+body {
+  color: #989898 !important;
+}
