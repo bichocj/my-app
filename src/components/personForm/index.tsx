@@ -3,7 +3,7 @@ import BaseImage from '../statics/Base.png';
 import { Container, Row, Col, Button, InputGroup, FormControl, Form } from 'react-bootstrap';
 import './styles.css';
 
-export default () =>   {
+export default ({goToNextStep}) =>   {
   return ( 
     <Container className="pt-5">
       <Row>
@@ -23,23 +23,49 @@ export default () =>   {
             <FormControl placeholder="Nro de Documento" />
           </InputGroup>
 
-          <FormControl type="date" placeholder="Fecha de nacimiento" />
+          <FormControl placeholder="Nombres" />
           
           <br/>
+          <FormControl placeholder="Apellido Paterno" />
+          
+          <br/>
+          <FormControl placeholder="Apellido Materno" />
+          
+          <br/>
+          <FormControl placeholder="Fecha de Nacimiento" type="date"/>
+          
+          
+          <br/>
+          Sexo
+          <Form.Check 
+            type={'radio'}
+            name={`radio-0`}
+            label={`Masculino`}
+          />
+          <Form.Check 
+            type={'radio'}
+            name={`radio-0`}
+            label={`Femenino`}
+          />
 
-          <FormControl placeholder="Celular" />
+          
+          <br/>
+          A quien vamos a asegurar?
+          <Form.Check 
+            type={'radio'}
+            name={`radio-1`}
+            label={`solo a mi`}
+          />
+          <Form.Check 
+            type={'radio'}
+            name={`radio-1`}
+            label={`A mi y a mi familia`}
+          />
 
           <br/>
+          <br/>
 
-          <Form.Group controlId="formBasicCheckbox">
-            <Form.Check type="checkbox" label="Acepto la Politica de Protección de Datos Personales y los Términos y Condiciones" />
-          </Form.Group>
-
-          <Form.Group controlId="formBasicCheckbox">
-            <Form.Check type="checkbox" label="Acepto la Politica de Envio de Comunicaciones Comerciales" />
-          </Form.Group>
-
-          <Button>Comencemos</Button>
+          <Button onClick={goToNextStep}>Continuar</Button>
         </Col>
       </Row>
     </Container>

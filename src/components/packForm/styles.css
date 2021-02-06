@@ -1,0 +1,29 @@
+
+.side-box {
+  background-image: url(../../statics/Illustration-1.png) ;
+  background-repeat: no-repeat;
+  background-size:  contain;
+  background-position:  right;
+}
+
+.side-box-shadow-right {
+  width: 80%;
+}
+
+.side-box-shadow-right {
+  height: 100%;  
+  width: 204px;
+  background-image: url(../../statics/Base.png) ;
+  background-repeat: no-repeat;
+  background-size:  contain;
+  background-position:  right;
+}
+
+.side-box-shadow-left {
+  color:white !important;
+  height: 100%;
+  background-color: #2f80ed;
+  background-repeat: no-repeat;
+  background-size:  contain;
+  background-position:  right;  
+}
