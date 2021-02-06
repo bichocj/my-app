@@ -1,8 +1,9 @@
 import React from 'react';
+import BaseImage from '../statics/Base.png';
 import { Container, Row, Col, Button, InputGroup, FormControl, Form } from 'react-bootstrap';
 import './styles.css';
 
-export default ({goToNextStep}) =>   {
+export default () =>   {
   return ( 
     <Container className="pt-5">
       <Row>
@@ -51,7 +52,7 @@ export default ({goToNextStep}) =>   {
             <Form.Check type="checkbox" label="Acepto la Politica de Envio de Comunicaciones Comerciales" />
           </Form.Group>
 
-          <Button onClick={goToNextStep}>Comencemos</Button>
+          <Button>Comencemos</Button>
         </Col>
       </Row>
     </Container>

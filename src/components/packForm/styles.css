@@ -5,23 +5,23 @@
   background-size:  contain;
   background-position:  right;
 }
-
+/* 
 .side-box-shadow-right {
   width: 80%;
-}
+} */
 
 .side-box-shadow-right {
-  height: 100%;  
-  width: 204px;
+  height: 80vh;  
+  min-width: 20px;
   background-image: url(../../statics/Base.png) ;
   background-repeat: no-repeat;
-  background-size:  contain;
+  background-size:  cover;
   background-position:  right;
 }
 
 .side-box-shadow-left {
   color:white !important;
-  height: 100%;
+  height: 80vh;
   background-color: #2f80ed;
   background-repeat: no-repeat;
   background-size:  contain;
