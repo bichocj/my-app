@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Login from './components/login';
 import PersonForm from './components/personForm';
 import PackForm from './components/packForm';
+import ThanksMessage from './components/thanksMessage';
 import './App.css';
 
 function App() {
@@ -9,7 +10,8 @@ function App() {
   const steps = [
     Login,
     PersonForm,
-    PackForm
+    PackForm,
+    ThanksMessage
   ]
   const Cmp = steps[currentStep];
   const goToNextStep = () => {

@@ -1,0 +1,27 @@
+
+.pack-side-box {
+  background-image: url(../../statics/Illustration-1.png) ;
+  background-repeat: no-repeat;
+  background-size:  contain;
+  background-position:  right;
+}
+
+.pack-side-box-shadow-right {
+  height: 100vh;
+  background-image: url(../../statics/Base.png) ;
+  background-repeat: no-repeat;
+  background-size:  contain;
+  background-position: left;
+}
+
+.bg-success {
+  color: white !important;
+  background-color: greenyellow;
+  padding: 10px !important;
+  border-radius: 15px !important;
+}
+
+.border-start {
+  border-left: 1px rgb(228, 227, 227) solid;
+  padding-left: 40px;
+}
